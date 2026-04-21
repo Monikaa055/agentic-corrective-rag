@@ -1,0 +1,28 @@
+[project]
+name = "agentic-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4",
+    "black",
+    "chromadb",
+    "dotenv",
+    "isort",
+    "langchain",
+    "langchain-chroma>=1.1.0",
+    "langchain-community",
+    "langchain-openai>=1.1.14",
+    "langchain-tavily>=0.2.18",
+    "langchain-text-splitters>=1.1.2",
+    "langchainhub",
+    "langgraph",
+    "pytest",
+    "python-dotenv",
+    "tavily-python",
+]
+[tool.uv]
+required-environments = [
+  "sys_platform == 'darwin' and platform_machine == 'x86_64'"
+]

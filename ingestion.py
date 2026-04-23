@@ -1,3 +1,5 @@
+import os
+
 from dotenv import load_dotenv
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import WebBaseLoader
@@ -5,6 +7,7 @@ from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 
 load_dotenv()
+os.environ.setdefault("USER_AGENT", "agentic-rag/1.0")
 
 urls = [
     "https://lilianweng.github.io/posts/2023-06-23-agent/",
